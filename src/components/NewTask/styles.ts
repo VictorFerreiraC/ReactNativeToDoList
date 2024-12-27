@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
     top: 150,
     flexDirection: 'row',
     width: 327,
-    height: 54
+    height: 54,
+    
   },
 
   input: {
@@ -18,7 +19,10 @@ const styles = StyleSheet.create({
     marginLeft: 24,
     borderWidth: 1,
     borderBlockColor: Colors.gray700,
-    paddingHorizontal: 16
+    paddingHorizontal: 16,
+    fontFamily: 'Inter-regular',
+    fontSize: 16,
+    lineHeight: 22.4,
   },
 
   placeholder: {
