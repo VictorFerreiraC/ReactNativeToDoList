@@ -6,9 +6,7 @@ import styles from './styles';
 function Header() {
     return (
         <View style={styles.container}>
-            <Svg
-                width={111}
-                height={32}
+            <Svg style={styles.logo}
                 viewBox="0 0 111 32"
                 fill="none"
             >
