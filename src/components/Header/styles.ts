@@ -7,11 +7,6 @@ const styles = StyleSheet.create({
     height: 175,
     justifyContent: 'center',
     alignItems: 'center'
-  },
-
-  logo: {
-    width: 111,
-    height: 32
   }
 });
 

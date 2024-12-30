@@ -6,13 +6,13 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 150,
     flexDirection: 'row',
-    width: 327,
+    width: 340,
     height: 54,
     
   },
 
   input: {
-    width: 271,
+    width: 284,
     height: 50,
     backgroundColor: Colors.gray500,
     borderRadius: 6,

@@ -3,9 +3,12 @@ import { Colors } from '../../styles/colors';
 
 const styles = StyleSheet.create({
   container: {
-    width: 327,
+    width: 340,
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop: 20,
+    borderTopWidth: 1,
+    borderTopColor: Colors.gray400,
   },
 
   image: {

@@ -3,8 +3,22 @@ import { View, TextInput, TouchableOpacity } from "react-native"
 import Svg, { G, Path, Defs, ClipPath } from "react-native-svg"
 import styles from './styles';
 
-function NewTask() {
+import Plus from "../icons/Plus";
+
+type Props = {
+    onAddTask: (description: string) => void;
+};
+
+function NewTask({ onAddTask }: Props) {
     const [isFocused, setIsFocused] = useState(false);
+    const [taskDescription, setTaskDescription] = useState('');
+
+    const handleAddTask = () => {
+        if (taskDescription.trim()) {
+            onAddTask(taskDescription); // Passa para o componente pai
+            setTaskDescription(''); // Limpa o campo
+        }
+    };
 
     return (
         <View style={styles.container}>
@@ -13,24 +27,15 @@ function NewTask() {
                 placeholderTextColor={styles.placeholder.color}
                 onFocus={() => setIsFocused(true)}   // Quando o input recebe foco
                 onBlur={() => setIsFocused(false)}  // Quando o input perde foco
+                value={taskDescription}
+                onChangeText={setTaskDescription}
             >
             </TextInput>
 
-            <TouchableOpacity style={styles.button}>
-                <Svg style={styles.icon}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                >
-                    <G clipPath="url(#clip0_10701_3)" fill="#F2F2F2">
-                        <Path d="M7.984 1.452a6.532 6.532 0 11-6.532 6.532 6.557 6.557 0 016.532-6.532zm0-1.452a7.984 7.984 0 10.065 15.967A7.984 7.984 0 007.984 0z" />
-                        <Path d="M11.707 7.381H8.495V4.17H7.414V7.38H4.199v1.082h3.215v3.211h1.081V8.463h3.212V7.38z" />
-                    </G>
-                    <Defs>
-                        <ClipPath id="clip0_10701_3">
-                            <Path fill="#fff" d="M0 0H16V16H0z" />
-                        </ClipPath>
-                    </Defs>
-                </Svg>
+            <TouchableOpacity style={styles.button}
+                onPress={handleAddTask}
+            >
+                <Plus />
             </TouchableOpacity>
         </View>
     )
