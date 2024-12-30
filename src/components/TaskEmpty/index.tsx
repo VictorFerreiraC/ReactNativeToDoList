@@ -1,10 +1,12 @@
 import React from "react"
-import { View, Text } from "react-native"
+import { View, Text, Image } from "react-native"
 import styles from './styles';
 
 function TaskEmpty() {
     return (
         <View style={styles.container}>
+            <Image source={require('../../../assets/empty.png')} style={styles.image}/>
+
             <Text style={styles.bold}>
                 Você ainda não tem tarefas cadastradas
             </Text>

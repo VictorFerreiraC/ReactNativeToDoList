@@ -3,8 +3,17 @@ import { Colors } from '../../styles/colors';
 
 const styles = StyleSheet.create({
   container: {
-    width: 287,
-    marginLeft: 24,
+    width: 327,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  image: {
+    width: 56,
+    height: 56,
+    resizeMode: 'contain', // Ajusta a imagem ao tamanho definido sem distorcer
+    marginTop: 48,
+    marginBottom: 16
   },
 
   bold: {
@@ -12,7 +21,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Inter-Bold',
     fontSize: 14,
     lineHeight: 19.6,
-    fontWeight: 'bold'
+    textAlign: 'center'
   },
 
   regular: {
@@ -20,6 +29,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Inter-Regular',
     fontSize: 14,
     lineHeight: 19.6,
+    textAlign: 'center'
   }
 
 });

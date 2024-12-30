@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   
   infoConcluidas: {
     color: Colors.purple,
-    width: 78,
+    width: 79, // no figma pede 78 mas não fico bom
     fontFamily: 'Inter-Bold',
     fontSize: 14
   },
@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.gray400,
     justifyContent: 'center',
     alignItems: 'center',
+    marginLeft: 8
   },
 
   infoElipse: {
