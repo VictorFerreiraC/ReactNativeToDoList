@@ -23,6 +23,11 @@ const styles = StyleSheet.create({
     fontFamily: 'Inter-regular',
     fontSize: 16,
     lineHeight: 22.4,
+    color: Colors.gray100
+  },
+
+  inputFocused: {
+    borderColor: Colors.purpleDark
   },
 
   placeholder: {

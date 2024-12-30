@@ -1,14 +1,18 @@
-import React from "react"
+import React, { useState } from "react"
 import { View, TextInput, TouchableOpacity } from "react-native"
 import Svg, { G, Path, Defs, ClipPath } from "react-native-svg"
 import styles from './styles';
 
 function NewTask() {
+    const [isFocused, setIsFocused] = useState(false);
+
     return (
         <View style={styles.container}>
-            <TextInput style={styles.input}
+            <TextInput style={[styles.input, isFocused && styles.inputFocused]}
                 placeholder='Adicione uma nova tarefa'
                 placeholderTextColor={styles.placeholder.color}
+                onFocus={() => setIsFocused(true)}   // Quando o input recebe foco
+                onBlur={() => setIsFocused(false)}  // Quando o input perde foco
             >
             </TextInput>
 
