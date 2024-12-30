@@ -38,9 +38,9 @@ O principal objetivo foi **consolidar conhecimentos** adquiridos durante o apren
 
 Abaixo estão algumas capturas de tela da aplicação em funcionamento:
 
-![Tela inicial](./assets/tela2.jpg)
+<img src="./assets/tela2.jpg" width="300"/>
 
-![Tela inicial](./assets/tela1.jpg)
+<img src="./assets/tela1.jpg" width="300"/>
 ---
 
 ## 🚀 Tecnologias Utilizadas
