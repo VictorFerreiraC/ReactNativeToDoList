@@ -12,7 +12,7 @@ function TaskEmpty() {
             </Text>
 
             <Text style={styles.regular}>
-                Você ainda não tem tarefas cadastradas
+                Crie tarefas e organize seus itens a fazer
             </Text>
         </View>
     )

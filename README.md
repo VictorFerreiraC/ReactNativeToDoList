@@ -36,8 +36,11 @@ O principal objetivo foi **consolidar conhecimentos** adquiridos durante o apren
 
 ## 📸 Demonstração
 
-<!-- Em produção -->
+Abaixo estão algumas capturas de tela da aplicação em funcionamento:
 
+![Tela inicial](./assets/tela2.jpg)
+
+![Tela inicial](./assets/tela1.jpg)
 ---
 
 ## 🚀 Tecnologias Utilizadas

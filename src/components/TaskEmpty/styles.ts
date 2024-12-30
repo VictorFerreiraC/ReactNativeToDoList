@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
     fontFamily: 'Inter-Bold',
     fontSize: 14,
     lineHeight: 19.6,
-    textAlign: 'center'
+    textAlign: 'center',
+    fontWeight: 'bold'
   },
 
   regular: {
